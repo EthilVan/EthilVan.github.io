@@ -1,0 +1,150 @@
+@import 'include/colors.less';
+@import 'include/var.less';
+
+body {
+    color: @font-color;
+    font-family: 'Asap', Helvetica, Arial, sans-serif;
+    font-size: @p-size;
+    line-height: normal;
+    text-shadow: black  1px  1px 0;
+}
+
+.colorless {
+    color: @font-color;
+}
+
+.cleaner {
+    clear: both;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.align-right {
+    text-align: right;
+}
+
+p {
+    font-size: @p-size;
+    margin: 0;
+    margin-bottom: @p-marge;
+    text-align: justify;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: @title-color;
+    margin: 0;
+    margin-bottom: @p-marge;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &.indent {
+        text-indent: @p-marge;
+    }
+}
+
+p+h1,
+p+h2,
+p+h3,
+p+h4,
+p+h5,
+p+h6 {
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: @p-size + 2rem;
+}
+
+h2 {
+    font-size: @p-size + 1.6rem;
+}
+
+h3 {
+    font-size: @p-size + 1.2rem;
+}
+
+h4 {
+    font-size: @p-size + 0.8rem;
+}
+
+h5 {
+    font-size: @p-size + 0.5rem;
+}
+
+h6 {
+    font-size: @p-size + 0.2rem;
+}
+
+a {
+    color: @title-color;
+
+    &:hover, &:focus {
+        text-decoration: none;
+        color: @title-color-light;
+        text-shadow: black  1px  1px 1px,
+                     black -1px  1px 1px,
+                     black  1px -1px 1px,
+                     black -1px -1px 1px;
+    }
+}
+
+ul {
+    margin: 0;
+    margin-bottom: @p-marge;
+    padding: 0;
+    padding-left: @p-marge * 2;
+
+    li {
+        line-height: 1.4em;
+    }
+
+    &.inline {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 0 1em;
+        }
+
+    }
+
+}
+
+.highlight {
+    background: none;
+}
+
+pre {
+    color: @font-color;
+    padding: 1rem;
+}
+
+pre, code {
+    background-color: @pre-color;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0 0.5rem black inset;
+}
+
+pre code {
+    box-shadow: none;
+}
+
+hr {
+    border: none;
+    border-bottom: 0.2rem solid @title-color;
+    margin: @p-marge * 2 0;
+}

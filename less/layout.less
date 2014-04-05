@@ -1,0 +1,75 @@
+@import 'include/colors.less';
+@import 'include/var.less';
+@import 'include/mixins.less';
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url(/assets/bg.png);
+    background-repeat: repeat;
+}
+
+header {
+    height: @header-height;
+    line-height: @header-height;
+    margin: 0 auto;
+    margin-bottom: @marge-window / 2;
+
+    #ev-logo, #ev-title {
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+    }
+
+    #ev-logo {
+        background-image: url(/assets/logo.png);
+        width: @header-height - 2rem;
+        height: @header-height - 2rem;
+        margin-left: 1rem;
+    }
+
+    #ev-title {
+        margin: 0;
+        font-style: italic;
+        font-size: 1/4 * @header-height;
+        color: @ev-color;
+        text-shadow: 0.1rem 0.1rem 0.5rem @border-color;
+        margin-left: 0.5rem;
+    }
+}
+
+#column {
+    margin: 0 auto;
+
+    .window {
+        background-color: @column-color;
+        border: 1px solid @border-color;
+        padding: @marge-window;
+        box-shadow: 0 0 1rem @border-color;
+        margin-bottom: @marge-window;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    #sidebar {
+        float: right;
+
+        ul:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    #content {
+
+        #disqus_thread {
+            margin-top: 2 * @marge-window;
+        }
+    }
+}
