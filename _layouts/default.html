@@ -12,58 +12,59 @@
         <link rel="icon" type="image/png" href="/assets/favicon.png"/>
 
         <link rel="stylesheet" href="/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
     </head>
 
     <body>
 
-        <header>
-            <a href="/">
-                <div id="ev-logo"></div>
-                <div id="ev-title" class="title">Ethil Van</div>
+    <header>
+        <div id="header-icons">
+            <a href="https://discord.gg/ZEECxNd">
+                <div id="discord" title="Rejoignez-nous sur Discord"></div>
             </a>
-        </header>
+            <a href="/minecraft">
+                <div id="minecraft" title="Notre serveur Minecraft"></div>
+            </a>
+        </div>
+        <a href="/">
+            <div id="ev-logo"></div>
+            <div id="ev-title" class="title">Ethil Van</div>
+        </a>
+    </header>
 
     <div id="column">
         <div id="sidebar">
             <div class="window infos">
-                <h6>TeamSpeak</h6>
+                <h6>Discord</h6>
                 <p>
-                    Adresse : ts.ethilvan.fr<br>
-                    Mot de passe : kamoulox
+                    Venez <a href="https://discord.gg/ZEECxNd">nous rejoindre</a> sur <a href="https://discordapp.com/">Discord</a> pour faire quelques games, discuter et voir si Ethil Van est fait pour vous.
                 </p>
-                <p class="align-right"><a href="/teamspeak">+ Règlement</a></p>
             </div>
             <div class="window games">
                 <h6>Jeux du moment</h6>
                 <ul>
                     <li>Smite</li>
-                    <li>Insurgency</li>
-                    <li>Mass Effect 3</li>
-                    <li>Counter-Strike: GO</li>
+                    <li>Minecraft</li>
+                    <li>GTA V</li>
+                    <li>Tabletop Simulator</li>
                 </ul>
                 <p class="align-right"><a href="/jeux">+ Liste complète</a></p>
+            </div>
+            <div class="window minecraft">
+                <h6>Minecraft</h6>
+                <p>Notre serveur Minecraft a récemment rouvert !</p>
+                <ul>
+                    <li>Adresse : mc.ethilvan.fr</li>
+                    <li><a href="/minecraft/screenshots">Pack de textures </a><a href="https://www.dropbox.com/s/qkohtyln56zz1eq/EthilVanMix-64.zip?dl=0"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a></li>
+                    <li><a href="/minecraft#Présentation">Présentation</a></li>
+                    <li><a href="/minecraft#Règlement">Règlement</a></li>
+                </ul>
+                <p class="align-right"><a href="/minecraft">En savoir plus</a></p>
             </div>
         </div>
         <div id="content" class="window">
             {{ content }}
-
-            {% if page.comments %}
-                <div id="disqus_thread"></div>
-                    <script type="text/javascript">
-                        var disqus_shortname = 'ethilvan';
-                        var disqus_identifier = '{{ page.disqusid }}';
-                        var disqus_url = 'http://ethilvan.fr{{ page.url }}';
-                        var disqus_title = '{{ page.title }}';
-                        /* * * DON'T EDIT BELOW THIS LINE * * */
-                        (function() {
-                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            {% endif %}
         </div>
         <div class="cleaner"></div>
     </div>

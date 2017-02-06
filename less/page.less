@@ -39,7 +39,7 @@ p {
 h1, h2, h3, h4, h5, h6, .title {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-weight: bold;
-    color: @title-color;
+    color: @ev-color;
     margin: 0;
     margin-bottom: @p-marge;
 
@@ -84,13 +84,16 @@ h5 {
 h6 {
     font-size: @p-size + 0.2rem;
 }
+#content h6 {
+    margin-left: 1.5rem;
+}
 
 a {
-    color: @title-color;
+    color: @link-color;
 
     &:hover, &:focus {
         text-decoration: none;
-        color: @title-color-light;
+        color: @link-color-hover;
         text-shadow: black  1px  1px 1px,
                      black -1px  1px 1px,
                      black  1px -1px 1px,
@@ -149,6 +152,37 @@ pre code {
 
 hr {
     border: none;
-    border-bottom: 0.2rem solid @title-color;
+    border-bottom: 0.2rem solid @link-color;
     margin: @p-marge * 2 0;
+}
+
+.ethilvannien {
+    color: @ethilvannien;
+}
+
+.gardien {
+    color: @gardien;
+}
+
+.sage {
+    color: @sage;
+}
+
+.download {
+    display: inline-block;
+    border: 1px solid black;
+    background-color: @pre-color;
+    padding: @p-size;
+    margin-bottom: @p-marge;
+}
+
+.carousel-caption {
+    p, h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+        margin-bottom: @p-marge;
+        text-shadow: black -1px -1px,
+                     black  1px -1px,
+                     black -1px  1px,
+                     black  1px  1px;
+    }
 }
