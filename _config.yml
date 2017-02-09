@@ -1,6 +1,6 @@
 name: Ethil Van
 markdown: redcarpet
-pygments: true
+highlighter: rouge
 permalink: /:title
 paginate: 5
 port: 4001
@@ -8,6 +8,3 @@ exclude:
     - less
     - Gemfile
     - Gemfile.lock
-
-embedly:
-    api_key: 

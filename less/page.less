@@ -2,54 +2,54 @@
 @import 'include/var.less';
 
 body {
-    color: @font-color;
-    font-family: 'Asap', Helvetica, Arial, sans-serif;
-    font-size: @p-size;
-    line-height: normal;
-    text-shadow: black  1px  1px 0;
+  color: @font-color;
+  font-family: 'Asap', Helvetica, Arial, sans-serif;
+  font-size: @p-size;
+  line-height: normal;
+  text-shadow: black  1px  1px 0;
 }
 
 .colorless {
-    color: @font-color;
+  color: @font-color;
 }
 
 .cleaner {
-    clear: both;
+  clear: both;
 }
 
 .inline {
-    display: inline-block;
+  display: inline-block;
 }
 
 .align-right {
-    text-align: right;
+  text-align: right;
 }
 
 p {
-    font-size: @p-size;
-    margin: 0;
-    margin-bottom: @p-marge;
-    text-align: justify;
+  font-size: @p-size;
+  margin: 0;
+  margin-bottom: @p-marge;
+  text-align: justify;
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, .title {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    color: @ev-color;
-    margin: 0;
-    margin-bottom: @p-marge;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: @ev-color;
+  margin: 0;
+  margin-bottom: @p-marge;
 
-    &:first-child {
-        margin-top: 0;
-    }
+  &:first-child {
+    margin-top: 0;
+  }
 
-    &.indent {
-        text-indent: @p-marge;
-    }
+  &.indent {
+    text-indent: @p-marge;
+  }
 }
 
 p+h1,
@@ -58,131 +58,132 @@ p+h3,
 p+h4,
 p+h5,
 p+h6 {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 h1 {
-    font-size: @p-size + 2rem;
+  font-size: @p-size + 2rem;
 }
 
 h2 {
-    font-size: @p-size + 1.6rem;
+  font-size: @p-size + 1.6rem;
 }
 
 h3 {
-    font-size: @p-size + 1.2rem;
+  font-size: @p-size + 1.2rem;
 }
 
 h4 {
-    font-size: @p-size + 0.8rem;
+  font-size: @p-size + 0.8rem;
 }
 
 h5 {
-    font-size: @p-size + 0.5rem;
+  font-size: @p-size + 0.5rem;
 }
 
 h6 {
-    font-size: @p-size + 0.2rem;
+  font-size: @p-size + 0.2rem;
 }
+
 #content h6 {
-    margin-left: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 a {
-    color: @link-color;
+  color: @link-color;
 
-    &:hover, &:focus {
-        text-decoration: none;
-        color: @link-color-hover;
-        text-shadow: black  1px  1px 1px,
-                     black -1px  1px 1px,
-                     black  1px -1px 1px,
-                     black -1px -1px 1px;
-    }
+  &:hover, &:focus {
+    text-decoration: none;
+    color: @link-color-hover;
+    text-shadow: black  1px  1px 1px,
+                 black -1px  1px 1px,
+                 black  1px -1px 1px,
+                 black -1px -1px 1px;
+  }
 }
 
 ul {
+  margin: 0;
+  margin-bottom: @p-marge;
+  padding: 0;
+  padding-left: @p-marge * 2;
+
+  li {
+    line-height: 1.4em;
+  }
+
+  &.inline {
     margin: 0;
-    margin-bottom: @p-marge;
     padding: 0;
-    padding-left: @p-marge * 2;
+    display: inline-block;
 
     li {
-        line-height: 1.4em;
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 1em;
     }
 
-    &.inline {
-        margin: 0;
-        padding: 0;
-        display: inline-block;
-
-        li {
-            list-style-type: none;
-            display: inline-block;
-            margin: 0 1em;
-        }
-
-    }
+  }
 
 }
 
 .highlight {
-    background: none;
+  background: none;
 }
 
 pre {
-    color: @font-color;
-    padding: 1rem;
+  color: @font-color;
+  padding: 1rem;
 }
 
 code {
-    padding: 0 0.3rem;
+  padding: 0 0.3rem;
 }
 
 pre, code {
-    background-color: @pre-color;
-    border-radius: 0.5rem;
-    border: none;
-    box-shadow: 0 0 0.5rem black inset;
+  background-color: @pre-color;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 0.5rem black inset;
 }
 
 pre code {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 hr {
-    border: none;
-    border-bottom: 0.2rem solid @link-color;
-    margin: @p-marge * 2 0;
+  border: none;
+  border-bottom: 0.2rem solid @link-color;
+  margin: @p-marge * 2 0;
 }
 
 .ethilvannien {
-    color: @ethilvannien;
+  color: @ethilvannien;
 }
 
 .gardien {
-    color: @gardien;
+  color: @gardien;
 }
 
 .sage {
-    color: @sage;
+  color: @sage;
 }
 
 .download {
-    display: inline-block;
-    border: 1px solid black;
-    background-color: @pre-color;
-    padding: @p-size;
-    margin-bottom: @p-marge;
+  display: inline-block;
+  border: 1px solid black;
+  background-color: @pre-color;
+  padding: @p-size;
+  margin-bottom: @p-marge;
 }
 
 .carousel-caption {
-    p, h1, h2, h3, h4, h5, h6 {
-        text-align: center;
-        margin-bottom: @p-marge;
-        text-shadow: black -1px -1px,
-                     black  1px -1px,
-                     black -1px  1px,
-                     black  1px  1px;
-    }
+  p, h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: @p-marge;
+    text-shadow: black -1px -1px,
+                 black  1px -1px,
+                 black -1px  1px,
+                 black  1px  1px;
+  }
 }
