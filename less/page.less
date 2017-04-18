@@ -42,14 +42,6 @@ h1, h2, h3, h4, h5, h6, .title {
   color: @ev-color;
   margin: 0;
   margin-bottom: @p-marge;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &.indent {
-    text-indent: @p-marge;
-  }
 }
 
 p+h1,
@@ -153,8 +145,8 @@ pre code {
 
 hr {
   border: none;
-  border-bottom: 0.2rem solid @link-color;
-  margin: @p-marge * 2 0;
+  border-bottom: 0.2rem solid @ev-color;
+  margin: @p-marge*2 0;
 }
 
 .ethilvannien {
