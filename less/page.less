@@ -2,15 +2,15 @@
 @import 'include/var.less';
 
 body {
-  color: @font-color;
+  color: @fontColor;
   font-family: 'Asap', Helvetica, Arial, sans-serif;
-  font-size: @p-size;
+  font-size: @pSize;
   line-height: normal;
   text-shadow: black  1px  1px 0;
 }
 
 .colorless {
-  color: @font-color;
+  color: @fontColor;
 }
 
 .cleaner {
@@ -26,9 +26,9 @@ body {
 }
 
 p {
-  font-size: @p-size;
+  font-size: @pSize;
   margin: 0;
-  margin-bottom: @p-marge;
+  margin-bottom: @pMargin;
   text-align: justify;
 
   &:last-child {
@@ -39,9 +39,9 @@ p {
 h1, h2, h3, h4, h5, h6, .title {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: @ev-color;
+  color: @evColor;
   margin: 0;
-  margin-bottom: @p-marge;
+  margin-bottom: @pMargin;
 }
 
 p+h1,
@@ -54,27 +54,27 @@ p+h6 {
 }
 
 h1 {
-  font-size: @p-size + 2rem;
+  font-size: @pSize + 2rem;
 }
 
 h2 {
-  font-size: @p-size + 1.6rem;
+  font-size: @pSize + 1.6rem;
 }
 
 h3 {
-  font-size: @p-size + 1.2rem;
+  font-size: @pSize + 1.2rem;
 }
 
 h4 {
-  font-size: @p-size + 0.8rem;
+  font-size: @pSize + 0.8rem;
 }
 
 h5 {
-  font-size: @p-size + 0.5rem;
+  font-size: @pSize + 0.5rem;
 }
 
 h6 {
-  font-size: @p-size + 0.2rem;
+  font-size: @pSize + 0.2rem;
 }
 
 #content h6 {
@@ -82,11 +82,11 @@ h6 {
 }
 
 a {
-  color: @link-color;
+  color: @linkColor;
 
   &:hover, &:focus {
     text-decoration: none;
-    color: @link-color-hover;
+    color: @linkHoverColor;
     text-shadow: black  1px  1px 1px,
                  black -1px  1px 1px,
                  black  1px -1px 1px,
@@ -96,9 +96,9 @@ a {
 
 ul {
   margin: 0;
-  margin-bottom: @p-marge;
+  margin-bottom: @pMargin;
   padding: 0;
-  padding-left: @p-marge * 2;
+  padding-left: @pMargin * 2;
 
   li {
     line-height: 1.4em;
@@ -124,7 +124,7 @@ ul {
 }
 
 pre {
-  color: @font-color;
+  color: @fontColor;
   padding: 1rem;
 }
 
@@ -133,7 +133,7 @@ code {
 }
 
 pre, code {
-  background-color: @pre-color;
+  background-color: @preColor;
   border-radius: 0.5rem;
   border: none;
   box-shadow: 0 0 0.5rem black inset;
@@ -145,37 +145,14 @@ pre code {
 
 hr {
   border: none;
-  border-bottom: 0.2rem solid @ev-color;
-  margin: @p-marge*2 0;
-}
-
-.ethilvannien {
-  color: @ethilvannien;
-}
-
-.gardien {
-  color: @gardien;
-}
-
-.sage {
-  color: @sage;
+  border-bottom: 0.2rem solid @evColor;
+  margin: @pMargin*2 0;
 }
 
 .download {
   display: inline-block;
   border: 1px solid black;
-  background-color: @pre-color;
-  padding: @p-size;
-  margin-bottom: @p-marge;
-}
-
-.carousel-caption {
-  p, h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    margin-bottom: @p-marge;
-    text-shadow: black -1px -1px,
-                 black  1px -1px,
-                 black -1px  1px,
-                 black  1px  1px;
-  }
+  background-color: @preColor;
+  padding: @pSize;
+  margin-bottom: @pMargin;
 }
